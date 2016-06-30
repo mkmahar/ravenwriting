@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ravenwriting by mkmahar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1></h1><img src="images/Unity_logo_MED_transparent.png" alt="Unity Logo" style="width:241px;height:107px;"></h1>
+      <p><a href="https://github.com/mkmahar/ravenwriting" class="btn">Latest Features</a>
+      <a href="https://github.com/mkmahar/ravenwriting/zipball/master" class="btn">Step-by-Step</a>
+      <a href="https://github.com/mkmahar/ravenwriting/tarball/master" class="btn">FAQs</a></p>
+    </section>
+    <section class="main-content">
+<h1>ACT CDE UAT Release Notes</h1>
+<p>This document describes the new and improved functionality or system changes delivered in the June 24<sup>th</sup>, 2016 production release of ACT CDE.</p>
+<p><a href="#_Toc454186714">System Enhancements. 1</a></p>
+<p><a href="#_Toc454186715">WIRIS MathML Editor Added to Content Editors 1</a></p>
+<p><a href="#_Toc454186716">TestNav8 Parameters Added to Forms Manager. 3</a></p>
+<p><a href="#_Toc454186717">Option to Append Form ID to Items and Passages Added for Form Export. 5</a></p>
+<p><a href="#_Toc454186718">Export of Extended Text Entry Items Improved. 6</a></p>
+<p><a href="#_Toc454186719">PBT and CBT Styles Added to Content Editors 6</a></p>
+<p><a href="#_Toc454186720">VITA Block Styles for Passages Added to Passage Editors 7</a></p>
+<p><a href="#_Toc454186721">VITA Block Styles for Items Added to Item Editors 8</a></p>
+<p><a href="#_Toc454186722">VITA Inline Styles Added to Content Editors 9</a></p>
+<p><a href="#_Toc454186723">Passage Underline Style Updated to Comply with Remove Incorrect Tags 10</a></p>
+<p><a href="#_Toc454186724">VITA Styles Gathered and Consolidated in Content Editors 11</a></p>
+<p><a href="#_Toc454186725">Gray Well Removed for Items Exported to TestNav8. 12</a></p>
+<p><a href="#_Toc454186726">Performance of Item Reports Improved. 13</a></p>
+<p><a href="#_Toc454186727">Item Set Workspace Enhancements. 13</a></p>
+<p><a href="#_Toc454186728">Uploading Print-Ready Images for Passage Images 13</a></p>
+<p><a href="#_Toc454186729">Application Changes. 14</a></p>
+<p><a href="#_Toc454186730">Preview Environment Created. 14</a></p>
+<p><a href="#_Toc454186731">Defect Fixes. 14</a></p>
+<p><a href="#_Toc454186732">Item Editing. 14</a></p>
+<p><a href="#_Toc454186733">Item Set Workspace. 14</a></p>
+<p><a href="#_Toc454186734">Rubric Management. 15</a></p>
+<p><a href="#_Toc454186735">TestNav8 Preview/Export. 15</a></p>
+<h2><a name="_Toc334620058"></a><a name="_Toc454186714"></a>System Enhancements</h2>
+<p>The following enhancements were made to the system.</p>
+<h3><a name="_Toc454186715"></a>WIRIS MathML Editor Added to Content Editors</h3>
+<p>A new and improved MathML Editor was added to content editors for items, passages, rubrics, interactions, directions and footnotes. This replaces the fMath Editor that previously existed in the content editors. You can access it from the new Math Editor icon &nbsp;added to the ribbon bar of these content editors.</p>
+<p>Figure 1 Accessing the WIRIS MathML Editor</p>
+<p>You can use the new WIRIS Editor to create and edit new MathML equations, edit equations created with the previous fMath Editor, and edit equations imported into the system.</p>
+<p>You can export MathML equations created with the WIRIS Editor as well as continue to export those created with the previous fMath Editor and those imported into the system.</p>
+<p>For more information on using the WIRIS MathML Editor, click <strong>Manual</strong> at the bottom-right corner of the editor.</p>
+<p>For more information on LaTex and how to enter it into the WIRIS MathML Editor, click <strong>LaTex</strong> at the bottom-right corner of the editor.</p>
+<p>Figure 2 Accessing Documentation on WIRIS and LaTex</p>
+<p>&nbsp;</p>
+<p>See also: &ldquo;Appendix C: Using the MathML Equation Editor" in the <u>ACT CDE User Guide</u>.</p>
+<h3><a name="_Toc454186716"></a>TestNav8 Parameters Added to Forms Manager</h3>
+<p>Several parameters needed in TestNav8 related to forms and form parts now appear on their respective pages in the Forms Manager.</p>
+<p>For form parts, the following parameters are now available on the Create Form Part and Edit Form Part pages:</p>
+<ul>
+<li><strong>Section Title</strong> &ndash; (Text Field) Text presented to test-takers at the start of a new section. Required for all form parts. Character limit of 50. Values accepted include alphanumeric, space, underscore, and hyphen.</li>
+<li><strong>Allow Reentry</strong> &ndash; (Checkbox) Allows test-takers to exit and reenter a test. Defaults to True.</li>
+<li><strong>Must Answer to Continue </strong>(Checkbox) Requires test-takers to submit an answer before continuing on with the test. Defaults to False.</li>
+<li><strong>Seal Code</strong> &ndash; (Checkbox) Requires test-takers to enter a four-digit code to continue to the next section. Defaults to False.</li>
+</ul>
+<p>Figure 3 Additional TestNav8 Parameters for Form Parts</p>
+<p>For forms, the following parameters are now available on the Create Form and Edit Form pages:</p>
+<ul>
+<li><strong>Exit Enabled</strong> (Checkbox) Defaults to True.</li>
+<li><strong>Save Responses</strong> &ndash; (Checkbox) Saves the responses to each question. Defaults to True.</li>
+<li><strong>Secure</strong> &ndash; (Checkbox) Defaults to True.</li>
+</ul>
+<p>Figure 4 Additional TestNav8 Parameters for Forms</p>
+<p>Content Specialists and users with admin permissions can configure these parameters by accessing the respective pages. The values you enter export as needed to TestNav8.</p>
+<h3><a name="_Toc454186717"></a>Option to Append Form ID to Items and Passages Added for Form Export</h3>
+<p>When creating or editing a form, content specialists and users with admin permissions now have the option to append the Form ID to item and passage identifiers when you export the form package.</p>
+<p>More specifically, the system adds the Form ID to the following locations in the form package:</p>
+<ul>
+<li>XML and CSS Filenames for Items and Packages<br /> Example: I00033_3774_E34I011.xml</li>
+<li>Identifier and HREF Parameters in xml<br /> Example: &lt;assessmentItemRef href="I00033_3776_E34I011.xml" identifier="I00033_3776_E34I011"/&gt;</li>
+<li>Identifier Parameters in Discreet Item XML Files <br /> Example: &lt;assessmentItem identifier="I00033_3738_E34I011"&gt;</li>
+<li>Identifier and HREF Parameters in Item XML Files Associated with a Passage<br /> Example: &lt;assessmentItem identifier="I00033_3738_E34I011"&gt; &lt;xi:include parse="xml" href="p1220_E34I011.xml"/&gt;</li>
+<li>Identifier and HREF Parameters in imamanifest.xml<br /> Example: &lt;resource identifier="I00033_3779_E34I011" href="I00033_3779_E34I011.xml"&gt; &lt;file href="I00033_3779_E34I011.xml" /&gt; &lt;dependency identifierref="I00033_3779_E34I011.css" /&gt;</li>
+</ul>
+<p>By appending the Form ID, you ensure TestNav8 will not overwrite other versions of the items and passages when you upload the package to TestNav8 because they&rsquo;ll be unique to your form.</p>
+<p>To enable this functionality, select the Add Form ID to Identifier option on the Create Form or Edit Form page.</p>
+<p>Figure 5 Configuring a Form to Append the Form ID to Identifiers</p>
+<h3><a name="_Toc440898540"></a><a name="_Toc437861167"></a><a name="_Toc453916651"></a><a name="_Toc453336156"></a><a name="_Toc454186718"></a>Export of Extended Text Entry Items Improved</h3>
+<p>When you export a form with an item that has a single extended text entry interactions, the system now exports the responseProcessing logic changes to the item XML</p>
+<p>When you export a form with an item that has multiple extended text entry interactions, the system now ensures the following occurs to the item XML:</p>
+<ul>
+<li>Includes a responseProcessing element</li>
+<li>Includes a separate Outcome Value for each score</li>
+<li>Lists each response on a separate line</li>
+</ul>
+<p>These export changes ensure the TestNav8 import mechanism can import the items successfully, score each part of the item accurately, and then sum the scores to produce a final score for the item.</p>
+<h3><a name="_Toc454186719"></a>PBT and CBT Styles Added to Content Editors</h3>
+<p>Content Specialists and Item Writers can now access and apply either a PBT (Paper-Based Testing) or CBT (Computer-Based Testing) style to item, passage, and interaction content. The formatting styles appear on the Ribbon Bar of the Create Item page, Create Passage page, Edit Item Content panel, Edit Passage Content panel, and Edit Item Interaction panel.</p>
+<p>When you apply these styles to selected text within a item/passage/interaction, the appearance of the text does not change in the content editor, but it does affect how the text appears in TestNav8 and content previewers.</p>
+<ul>
+<li><strong>PBT</strong><br /> Ensures only the selected text exports as part of a paper-based test when exporting the item using Export to PBT.</li>
+<li><strong>CBT</strong><br /> Ensures only the selected text exports as part of an online test when exporting the item using Export to TestNav8.</li>
+</ul>
+<p><strong>Note</strong>: Text designated with PBT will not display in the TestNav8 Previewer or system previewers (such as the Item Preview Panel or Create Passage Preview tab). Text designated with CBT will continue to display.</p>
+<p>Figure 6 PBT and CBT Styles on the Edit Passage Content Panel</p>
+<p>Users can apply further styles to the same text, such as bold or italics, while maintaining the styles listed above. The formatting remains intact upon export.</p>
+<h3><a name="_Toc454186720"></a>VITA Block Styles for Passages Added to Passage Editors</h3>
+<p>Content Specialists and Item Writers can now access and apply three new VITA Block Styles to passage content. The formatting style appears under <strong>Formats &gt; VITA Block Styles</strong> on the Create Passage page, and Edit Passage Content panel.</p>
+<ul>
+<li><strong>Advanced Organizer</strong><br /> When viewing the passage in TestNav8, the text formatted with the Advanced Organizer style appears outside and above the scrollable box instead of appearing inside it. This content commonly includes text that introduces the passage topic and, more importantly, illustrates the relationship between the passage and information they already know.</li>
+<li><strong>Passage Head</strong><br /> Similar to Advanced Organizer, when viewing the passage in TestNav8, the text formatted with the Passage Head style appears outside and above the scrollable box instead of appearing inside it. This content commonly includes a small amount of text that only introduces the passage topic.</li>
+<li><strong>Stimulus Paragraph Number<br /> </strong>Applying Stimulus Paragraph Number to content centers the text in the editor. This content typically includes numbers before each paragraph in a passage. When exported, the style changes to &ldquo;text-align: center&rdquo; in order to comply with TestNav8. This style is also available on the Edit Reference Passage Content panel.</li>
+</ul>
+<p>When you apply Advanced Organizer or Passage Head to selected text within a passage, the appearance of the text does not change in the content editor, but it does affect how the text appears in TestNav8 and the TestNav8 Previewer.</p>
+<p>Figure 7 Advanced Organizer Applied to Passage Content</p>
+<p>Users can apply further styles to the same text, such as bold or italics, while maintaining the styles listed above. The formatting remains intact upon export of the passage.</p>
+<h3><a name="_Toc454186721"></a><a name="_Toc453916652"></a>VITA Block Styles for Items Added to Item Editors</h3>
+<p>Content Specialists and Item Writers can now access and apply three new VITA Block Styles to item content. The styles appear under <strong>Formats &gt; VITA Block Styles</strong> on the Create Item page and Edit Item Content panel.</p>
+<ul>
+<li><strong>Boxed Directions Stem</strong><br /> When you use the Paired Passage Instruction style to create a scrollable box around item content, the text formatted with the Boxed Direction Stem style appears outside and directly below the scrollable box. The selected text should include text that applies to all interactions in the item.</li>
+<li><strong>Paired Passage Instruction</strong><br /> When you apply this style to item content, it creates a scrollable box around content not formatted with this style and places the text formatted with this style outside and directly above the scrollable box. This style requires you to use the Prompt style on the stem of the first interaction or else that stem will appear within the scrollable box.</li>
+<li><strong>Prompt<br /> </strong>When you use the Paired Passage Instruction style to create a scrollable box around item content, the text formatted with this style appears outside and below the scrollable box (similar to the Boxed Directions Stem), except the selected text should include text that applies to only one interaction for the item. You can apply this style to the stem for all interactions in an item.</li>
+</ul>
+<p>Figure 8 VITA Block Styles Applied to Item Content</p>
+<p>Users can apply further styles to the same text, such as bold or italics, while maintaining the styles listed above. The formatting remains intact upon export of the passage.</p>
+<h3><a name="_Toc454186722"></a><a name="_Toc453916653"></a>VITA Inline Styles Added to Content Editors</h3>
+<p>Content Specialists and Item Writers can now access and apply two new VITA Inline Styles to any content, including passages, items, and interactions. The styles appear under <strong>Formats &gt; VITA Inline Styles</strong> on the Create Item page, Create Passage page, Edit Item Content panel, Edit Interactions panel, Edit Passage Content panel, and Edit Reference Passage Content panel.</p>
+<ul>
+<li><strong>Boxed Directions Stem</strong><br /> When you use the Paired Passage Instruction style to create a scrollable box around item content, the text formatted with the Boxed Direction Stem style appears outside and directly below the scrollable box. The selected text should include text that applies to all interactions in the item.</li>
+<li><strong>Inline No-Break</strong><br /> When you apply this style to content, the text appears with an orange highlight all characters appear on a single line. When exported, the style changes to &ldquo;white-space:nowrap&rdquo; in order to comply with TestNav8 and no longer includes the orange highlighting.</li>
+</ul>
+<p>Users can apply further styles to the same text, such as bold or italics, while maintaining the styles listed above. The formatting remains intact upon export of the passage.</p>
+<h3><a name="_Toc453916654"></a><a name="_Toc454186723"></a><a name="_Toc453336154"></a>Passage Underline Style Updated to Comply with Remove Incorrect Tags</h3>
+<p>Content Specialists and Item Writers can now apply the Passage Underline style to content tagged with the Dynamic Text Remove Incorrect tag. The formatting style appears under <strong>Formats &gt; VITA Inline Styles</strong> on the Create Passage page, Edit Passage Content panel, and Edit Reference Passage Content panel.</p>
+<p>When you apply this style to text within the Remove Incorrect tag, the text appears underline, but it does affect how the text appears in TestNav8 and the TestNav8 Previewer.</p>
+<p>Figure 9 Advanced Organizer Applied to Passage Content</p>
+<p>Users can apply further styles to the same text, such as bold or italics, while maintaining the styles listed above. The formatting remains intact upon export of the passage.</p>
+<h3><a name="_Toc454186724"></a>VITA Styles Gathered and Consolidated in Content Editors</h3>
+<p>The following VITA styles were either added or removed from the content editors (items, passages, interactions, or rubrics) to ensure the correct styles appear for each content editor.</p>
+<p>This includes the Create Item page and Edit Item Content panel for items, the Create Passage page, Edit Item Content panel, and Edit Passage Content panel for passages, the Interactions tab of the Create Item page and Edit Item Interactions panel for Interactions, and the Create Rubric page for rubrics.</p>
+<table width="936">
+<tbody>
+<tr>
+<td width="351">
+<p><strong>Action Taken on Styles</strong></p>
+</td>
+<td colspan="2" width="585">
+<p><strong>Styles Affected</strong></p>
+</td>
+</tr>
+<tr>
+<td width="351">
+<p>**Removed for items, interactions, passages, or rubrics because they are no longer used in the system.</p>
+</td>
+<td width="297">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Bold Internal Head</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Figure Label</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Italic Internal Head</p>
+</td>
+<td width="288">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Math (inline style)</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Span 6</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Well</p>
+</td>
+</tr>
+<tr>
+<td width="351">
+<p>Removed for items because they only apply to passages.</p>
+</td>
+<td width="297">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Advanced Organizer</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Boxed Directions Stimulus</p>
+</td>
+<td width="288">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Stimulus Head</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Stimulus Paragraph Number</p>
+</td>
+</tr>
+<tr>
+<td width="351">
+<p>Removed for passages because they only apply to items.</p>
+</td>
+<td width="297">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Boxed Directions Stem</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Paired Passage Instruction</p>
+</td>
+<td width="288">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp; Prompt</p>
+</td>
+</tr>
+<tr>
+<td width="351">
+<p>Added to items because they only appeared for passages.</p>
+</td>
+<td width="297">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; English Sentence Numbering</p>
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paper Versus Online Text</p>
+</td>
+<td width="288">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No Break</p>
+</td>
+</tr>
+<tr>
+<td width="351">
+<p>Added to passages because they only appeared for items.</p>
+</td>
+<td width="297">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No Break</p>
+</td>
+<td width="288">
+<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Paper Versus Online Text</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>**Note</strong>: Imported content can still contain the styles, but users can no longer add them to content from the system.</p>
+<p>All VITA formatting styles were also removed from the <strong>Insert</strong> menu on the Content tab and Interactions tab on the Create Item page and the Content tab or Footnotes tab on the Create Passage page. They are still available from the Format menu of these same tabs.</p>
+<p>Figure 10 Accessing VITA Format Styles</p>
+<h3><a name="_Toc453916655"></a><a name="_Toc453916649"></a><a name="_Toc454186725"></a><a name="_Toc453916650"></a>Gray Well Removed for Items Exported to TestNav8</h3>
+<p>When you used the <strong>Preview in TestNav8</strong> or <strong>Export to TestNav8</strong> options, item content appeared within a gray well. That gray well no longer appears in the preview and is no longer exported as part of the item XML. The content is embedded directly on the test delivery space as show on the right side of the image below. The passage continues to appear in its own scrollable box as show on the left side of the image.</p>
+<p>All users can access the <strong>Preview in TestNav8</strong> option from the Preview tab of the Create Item page. Content Specialists and users with administrator permissions access the <strong>Export to TestNav8</strong> option from the Manage Test Form page.</p>
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<h3><a name="_Toc454186726"></a>Performance of Item Reports Improved</h3>
+<p>Item reports perform faster due to changes we made to how the reports pull in data.</p>
+<p>Specifically, instead of having the system retrieve all records every time, the SQL construction now depends on your filter selection. Also, a paging feature was added to HTML reports so the reports only have to retrieve a small chunk of data with each page instead of the entire report.</p>
+<h2><a name="_Toc454186727"></a>Item Set Workspace Enhancements</h2>
+<p>The following enhancements were made to the Item Set Workspace.</p>
+<p><strong>Note</strong>: The Item Set Workspace is currently restricted to Content Specialists.</p>
+<h3><a name="_Toc454186728"></a><a name="_Toc453916656"></a><a name="_Toc448403957"></a>Uploading Print-Ready Images for Passage Images</h3>
+<p>You can now upload a print-ready image (EPS file) for an already uploaded image for a passage using a new icon added to the Manage Passage Assets panel in the Item Set Workspace. The icon offers the same functionality as the Insert Image icon in the Content Editor the Create Passage page.</p>
+<p>Figure 11 Uploading a Print-Ready Image File</p>
+<p>The system uses the print-ready version of the image in the delivery of printed tests. You can only upload one print-ready EPS file per image file for a passage. The maximum files size for EPS images is 16 MB.</p>
+<p>See also: &ldquo;Add Image Files&rdquo; in the &ldquo;Edit the Passage&rdquo; section of the <u>ACT CDE Item Set Workspace User Guide</u>.</p>
+<h2><a name="_Toc454186729"></a><a name="_Toc453916657"></a>Application Changes</h2>
+<h3><a name="_Toc454186730"></a><a name="_Toc453916658"></a>Preview Environment Created</h3>
+<p>A new PREVIEW environment now exists for ACT CDE. This is in addition to our QA, UAT, and PROD environments.</p>
+<p>The PREVIEW environment is restricted to a small number of users responsible for testing and approving new features. It&rsquo;s a place where users can preview a new feature before committing it to the system or troubleshoot an existing issue without compromising live data.</p>
+<h2><a name="_Toc454186731"></a>Defect Fixes</h2>
+<p>The defects listed in the tables below were fixed in this release. Only tickets found by ACT are included in the list. Some defects may have been included in the past release, but are in the list below due to additional testing and more extensive fixes.</p>
+<p>A full list of defects fixed including those found by the QA team at Pacific Metrics can be found on the Verification Checklist. The Ticket Number column corresponds to the defect&rsquo;s ticket number in Rally.</p>
+<h3><a name="_Toc454186732"></a>Item Editing</h3>
+<table>
+<tbody>
+<tr>
+<td width="144">
+<p><strong>Ticket Number</strong></p>
+</td>
+<td width="315">
+<p><strong>Issue</strong></p>
+</td>
+<td width="315">
+<p><strong>Fix</strong></p>
+</td>
+<td width="162">
+<p><strong>Screens Affected</strong></p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p><strong>DE9442</strong></p>
+</td>
+<td width="315">
+<p>The system did not allow you to edit a choice interaction generated as part of an item set.</p>
+</td>
+<td width="315">
+<p>The system was updated to ensure interactions for an item load successfully when you generate them as part of an item set.</p>
+</td>
+<td width="162">
+<p>Create Item page, Edit Interactions panel</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><a name="_Toc454186733"></a>Item Set Workspace</h3>
+<p><strong>Note</strong>: The Item Set Workspace is currently restricted to Content Specialists.</p>
+<table>
+<tbody>
+<tr>
+<td width="144">
+<p><strong>Ticket Number</strong></p>
+</td>
+<td width="315">
+<p><strong>Issue</strong></p>
+</td>
+<td width="315">
+<p><strong>Fix</strong></p>
+</td>
+<td width="162">
+<p><strong>Screens Affected</strong></p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p><strong>DE9483</strong></p>
+</td>
+<td width="315">
+<p>The system did not let you apply a Remove Paragraph Numbers tag to content that already had a Highlighting tag associated with it and the Stimulus Paragraph Numbering system applied to it.</p>
+</td>
+<td width="315">
+<p>The system was updated to allow you to apply the Remove Paragraph Numbers tag to text that also had a Highlighting tag applied to it.</p>
+</td>
+<td width="162">
+<p>Edit Dynamic Passage panel</p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p><strong>DE9484</strong></p>
+</td>
+<td width="315">
+<p>When you applied several Remove Passage Numbers and Remove Sentence Numbers tags to a passage, the tags appeared out of order on the list of tags.</p>
+</td>
+<td width="315">
+<p>This issue was not reproducible.</p>
+</td>
+<td width="162">
+<p>Edit Dynamic Passage panel</p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p><strong>DE9485</strong></p>
+</td>
+<td width="315">
+<p>When you applied both the Boxed Directions Stimulus style and the Remove Passage Directions tag to a section of text, the system did not highlight the text when you hovered over the Remove Passage Directions tag in the editor.</p>
+</td>
+<td width="315">
+<p>The system was updated to ensure background colors do not affect the highlighting of text when you hover of its related tag.</p>
+</td>
+<td width="162">
+<p>Edit Dynamic Passage panel</p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p><strong>DE9714</strong></p>
+</td>
+<td width="315">
+<p>When you applied a Remove Incorrect tag to content that already had a Highlighting tag associated with it, the highlighting no longer displayed as expected.</p>
+</td>
+<td width="315">
+<p>The export functionality for Remove Incorrect tags no longer affects Highlighting tags applied to the same content.</p>
+</td>
+<td width="162">
+<p>TestNav8 Previewer</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><a name="_Toc454186734"></a>Rubric Management</h3>
+<table>
+<tbody>
+<tr>
+<td width="144">
+<p><strong>Ticket Number</strong></p>
+</td>
+<td width="315">
+<p><strong>Issue</strong></p>
+</td>
+<td width="315">
+<p><strong>Fix</strong></p>
+</td>
+<td width="162">
+<p><strong>Screens Affected</strong></p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p>DE7323</p>
+</td>
+<td width="315">
+<p>When you made changes to a rubric after creating it, sometimes the system did not save the changes.</p>
+</td>
+<td width="315">
+<p>The system no longer propagates changes made to the template of a rubric unless you select Update Content on the Template tab. This prevents you from thinking your template changes are saved when you save the rubric.</p>
+</td>
+<td width="162">
+<p>Create Rubric page</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><a name="_Toc454186735"></a>TestNav8 Preview/Export</h3>
+<table>
+<tbody>
+<tr>
+<td width="144">
+<p><strong>Ticket Number</strong></p>
+</td>
+<td width="315">
+<p><strong>Issue</strong></p>
+</td>
+<td width="315">
+<p><strong>Fix</strong></p>
+</td>
+<td width="162">
+<p><strong>Screens Affected</strong></p>
+</td>
+</tr>
+<tr>
+<td width="144">
+<p>DE8946</p>
+</td>
+<td width="315">
+<p>Tables created as part of a MathML equation apepared as collapsed in the TestNav8 Previewer even though they displayed correctly when previewed in the system.</p>
+</td>
+<td width="315">
+<p>Updates made by Pearson to the TestNav8 Previewer fixed this issue.</p>
+</td>
+<td width="162">
+<p>TestNav8 Previewer</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/mkmahar/ravenwriting">Ravenwriting</a> is maintained by <a href="https://github.com/mkmahar">mkmahar</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
